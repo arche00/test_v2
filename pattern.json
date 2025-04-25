@@ -1,0 +1,1295 @@
+{
+  "metadata": {
+    "timestamp": "2025-04-20T07:16:53.594Z",
+    "total_patterns": 64,
+    "groupA_count": 32,
+    "groupB_count": 32,
+    "sorting_criteria": "manual"
+  },
+  "patterns": {
+    "groupA": [
+      {
+        "pattern_number": 1,
+        "sequence": [
+          "b",
+          "b",
+          "b",
+          "b",
+          "b",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 6,
+          "player_count": 0,
+          "sequence_type": "continuous",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 0
+        }
+      },
+      {
+        "pattern_number": 3,
+        "sequence": [
+          "b",
+          "b",
+          "b",
+          "b",
+          "p",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 5,
+          "player_count": 1,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 6,
+        "sequence": [
+          "b",
+          "b",
+          "b",
+          "p",
+          "b",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 8,
+        "sequence": [
+          "b",
+          "b",
+          "b",
+          "p",
+          "p",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 1
+        }
+      },
+      {
+        "pattern_number": 10,
+        "sequence": [
+          "b",
+          "b",
+          "p",
+          "b",
+          "b",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 12,
+        "sequence": [
+          "b",
+          "b",
+          "p",
+          "b",
+          "p",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 13,
+        "sequence": [
+          "b",
+          "b",
+          "p",
+          "p",
+          "b",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 15,
+        "sequence": [
+          "b",
+          "b",
+          "p",
+          "p",
+          "p",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 17,
+        "sequence": [
+          "b",
+          "p",
+          "b",
+          "b",
+          "b",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 5,
+          "player_count": 1,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 19,
+        "sequence": [
+          "b",
+          "p",
+          "b",
+          "b",
+          "p",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 4
+        }
+      },
+      {
+        "pattern_number": 22,
+        "sequence": [
+          "b",
+          "p",
+          "b",
+          "p",
+          "b",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 5
+        }
+      },
+      {
+        "pattern_number": 24,
+        "sequence": [
+          "b",
+          "p",
+          "b",
+          "p",
+          "p",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 26,
+        "sequence": [
+          "b",
+          "p",
+          "p",
+          "b",
+          "b",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 28,
+        "sequence": [
+          "b",
+          "p",
+          "p",
+          "b",
+          "p",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 29,
+        "sequence": [
+          "b",
+          "p",
+          "p",
+          "p",
+          "b",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 31,
+        "sequence": [
+          "b",
+          "p",
+          "p",
+          "p",
+          "p",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 34,
+        "sequence": [
+          "p",
+          "b",
+          "b",
+          "b",
+          "b",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 37,
+        "sequence": [
+          "p",
+          "b",
+          "b",
+          "p",
+          "b",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 39,
+        "sequence": [
+          "p",
+          "b",
+          "b",
+          "p",
+          "p",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 41,
+        "sequence": [
+          "p",
+          "b",
+          "p",
+          "b",
+          "b",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 43,
+        "sequence": [
+          "p",
+          "b",
+          "p",
+          "b",
+          "p",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 5
+        }
+      },
+      {
+        "pattern_number": 46,
+        "sequence": [
+          "p",
+          "b",
+          "p",
+          "p",
+          "b",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 4
+        }
+      },
+      {
+        "pattern_number": 48,
+        "sequence": [
+          "p",
+          "b",
+          "p",
+          "p",
+          "p",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 1,
+          "player_count": 5,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 50,
+        "sequence": [
+          "p",
+          "p",
+          "b",
+          "b",
+          "b",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 52,
+        "sequence": [
+          "p",
+          "p",
+          "b",
+          "b",
+          "p",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 53,
+        "sequence": [
+          "p",
+          "p",
+          "b",
+          "p",
+          "b",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 55,
+        "sequence": [
+          "p",
+          "p",
+          "b",
+          "p",
+          "p",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 57,
+        "sequence": [
+          "p",
+          "p",
+          "p",
+          "b",
+          "b",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 1
+        }
+      },
+      {
+        "pattern_number": 59,
+        "sequence": [
+          "p",
+          "p",
+          "p",
+          "b",
+          "p",
+          "b"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 62,
+        "sequence": [
+          "p",
+          "p",
+          "p",
+          "p",
+          "b",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 1,
+          "player_count": 5,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 64,
+        "sequence": [
+          "p",
+          "p",
+          "p",
+          "p",
+          "p",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 0,
+          "player_count": 6,
+          "sequence_type": "continuous",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 0
+        }
+      },
+      {
+        "pattern_number": 36,
+        "sequence": [
+          "p",
+          "b",
+          "b",
+          "b",
+          "p",
+          "p"
+        ],
+        "group": "a",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 2
+        }
+      }
+    ],
+    "groupB": [
+      {
+        "pattern_number": 2,
+        "sequence": [
+          "b",
+          "b",
+          "b",
+          "b",
+          "b",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 5,
+          "player_count": 1,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 1
+        }
+      },
+      {
+        "pattern_number": 4,
+        "sequence": [
+          "b",
+          "b",
+          "b",
+          "b",
+          "p",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 1
+        }
+      },
+      {
+        "pattern_number": 5,
+        "sequence": [
+          "b",
+          "b",
+          "b",
+          "p",
+          "b",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 5,
+          "player_count": 1,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 7,
+        "sequence": [
+          "b",
+          "b",
+          "b",
+          "p",
+          "p",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 9,
+        "sequence": [
+          "b",
+          "b",
+          "p",
+          "b",
+          "b",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 5,
+          "player_count": 1,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 11,
+        "sequence": [
+          "b",
+          "b",
+          "p",
+          "b",
+          "p",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 4
+        }
+      },
+      {
+        "pattern_number": 14,
+        "sequence": [
+          "b",
+          "b",
+          "p",
+          "p",
+          "b",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 16,
+        "sequence": [
+          "b",
+          "b",
+          "p",
+          "p",
+          "p",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 1
+        }
+      },
+      {
+        "pattern_number": 18,
+        "sequence": [
+          "b",
+          "p",
+          "b",
+          "b",
+          "b",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 20,
+        "sequence": [
+          "b",
+          "p",
+          "b",
+          "b",
+          "p",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 21,
+        "sequence": [
+          "b",
+          "p",
+          "b",
+          "p",
+          "b",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 4
+        }
+      },
+      {
+        "pattern_number": 23,
+        "sequence": [
+          "b",
+          "p",
+          "b",
+          "p",
+          "p",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 4
+        }
+      },
+      {
+        "pattern_number": 25,
+        "sequence": [
+          "b",
+          "p",
+          "p",
+          "b",
+          "b",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 27,
+        "sequence": [
+          "b",
+          "p",
+          "p",
+          "b",
+          "p",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "b",
+          "transitions": 4
+        }
+      },
+      {
+        "pattern_number": 30,
+        "sequence": [
+          "b",
+          "p",
+          "p",
+          "p",
+          "b",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 32,
+        "sequence": [
+          "b",
+          "p",
+          "p",
+          "p",
+          "p",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 1,
+          "player_count": 5,
+          "sequence_type": "mixed",
+          "start_with": "b",
+          "end_with": "p",
+          "transitions": 1
+        }
+      },
+      {
+        "pattern_number": 33,
+        "sequence": [
+          "p",
+          "b",
+          "b",
+          "b",
+          "b",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 5,
+          "player_count": 1,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 1
+        }
+      },
+      {
+        "pattern_number": 35,
+        "sequence": [
+          "p",
+          "b",
+          "b",
+          "b",
+          "p",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 38,
+        "sequence": [
+          "p",
+          "b",
+          "b",
+          "p",
+          "b",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 4
+        }
+      },
+      {
+        "pattern_number": 40,
+        "sequence": [
+          "p",
+          "b",
+          "b",
+          "p",
+          "p",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 42,
+        "sequence": [
+          "p",
+          "b",
+          "p",
+          "b",
+          "b",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 4
+        }
+      },
+      {
+        "pattern_number": 44,
+        "sequence": [
+          "p",
+          "b",
+          "p",
+          "b",
+          "p",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 4
+        }
+      },
+      {
+        "pattern_number": 45,
+        "sequence": [
+          "p",
+          "b",
+          "p",
+          "p",
+          "b",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 47,
+        "sequence": [
+          "p",
+          "b",
+          "p",
+          "p",
+          "p",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 49,
+        "sequence": [
+          "p",
+          "p",
+          "b",
+          "b",
+          "b",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 4,
+          "player_count": 2,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 1
+        }
+      },
+      {
+        "pattern_number": 51,
+        "sequence": [
+          "p",
+          "p",
+          "b",
+          "b",
+          "p",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 3,
+          "player_count": 3,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 3
+        }
+      },
+      {
+        "pattern_number": 54,
+        "sequence": [
+          "p",
+          "p",
+          "b",
+          "p",
+          "b",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 4
+        }
+      },
+      {
+        "pattern_number": 56,
+        "sequence": [
+          "p",
+          "p",
+          "b",
+          "p",
+          "p",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 1,
+          "player_count": 5,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 58,
+        "sequence": [
+          "p",
+          "p",
+          "p",
+          "b",
+          "b",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 60,
+        "sequence": [
+          "p",
+          "p",
+          "p",
+          "b",
+          "p",
+          "p"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 1,
+          "player_count": 5,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "p",
+          "transitions": 2
+        }
+      },
+      {
+        "pattern_number": 61,
+        "sequence": [
+          "p",
+          "p",
+          "p",
+          "p",
+          "b",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 2,
+          "player_count": 4,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 1
+        }
+      },
+      {
+        "pattern_number": 63,
+        "sequence": [
+          "p",
+          "p",
+          "p",
+          "p",
+          "p",
+          "b"
+        ],
+        "group": "b",
+        "characteristics": {
+          "banker_count": 1,
+          "player_count": 5,
+          "sequence_type": "mixed",
+          "start_with": "p",
+          "end_with": "b",
+          "transitions": 1
+        }
+      }
+    ]
+  }
+}
