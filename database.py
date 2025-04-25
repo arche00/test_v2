@@ -27,22 +27,10 @@ def get_db_connection():
 
 def init_database():
     """
-    데이터베이스 테이블을 초기화합니다.
+    이 함수는 비활성화되었습니다.
+    기존 데이터베이스를 사용하기 위해 테이블 초기화를 건너뜁니다.
     """
-    conn = get_db_connection()
-    if conn is None:
-        return False
-    
-    try:
-        with conn.cursor() as cur, open('create_tables.sql', 'r') as f:
-            cur.execute(f.read())
-        conn.commit()
-        return True
-    except Exception as e:
-        st.error(f"테이블 초기화 오류: {str(e)}")
-        return False
-    finally:
-        conn.close()
+    return True  # 항상 성공을 반환하여 테이블 초기화를 건너뜁니다
 
 def insert_pattern_record(pattern, next_pattern):
     """
@@ -91,25 +79,10 @@ def get_pattern_transitions(limit=150):
 
 def cleanup_old_records(days=90):
     """
-    오래된 레코드를 삭제합니다.
+    이 함수는 더 이상 레코드를 삭제하지 않습니다.
+    모든 레코드를 보존하기 위해 비활성화되었습니다.
     """
-    conn = get_db_connection()
-    if conn is None:
-        return False
-    
-    try:
-        with conn.cursor() as cur:
-            cur.execute("""
-                DELETE FROM pattern_records
-                WHERE timestamp < CURRENT_TIMESTAMP - INTERVAL '%s days'
-            """, (days,))
-        conn.commit()
-        return True
-    except Exception as e:
-        st.error(f"오래된 레코드 삭제 오류: {str(e)}")
-        return False
-    finally:
-        conn.close()
+    return True  # 레코드 삭제를 비활성화하고 성공을 반환
 
 def insert_group_sequence(sequence):
     """

@@ -5,14 +5,10 @@ import json
 import pandas as pd
 from database import (
     get_db_connection,
-    init_database,
     insert_pattern_record,
     get_pattern_transitions,
     cleanup_old_records
 )
-
-# Initialize database when the app starts
-init_database()
 
 # Function to save pattern analysis results
 def save_pattern_record(group_range, pattern_123, pattern_1234):
@@ -844,9 +840,6 @@ def display_recent_records():
         st.error(f"기록 조회 중 오류 발생: {str(e)}")
 
 def main():
-    # 페이지 전체 너비 설정
-    st.set_page_config(layout="wide")
-    
     st.title("Bead Road Parser")
     
     # Initialize session state
