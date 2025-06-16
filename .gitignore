@@ -1,0 +1,59 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Database
+*.sqlite3
+
+# Logs
+*.log
+
+# Ignore large files (300MB+)
+/.git/objects/6e/c3fe32b3597c11be09d72703abb2a84f92ddf6
+/.git/objects/d9/fda9201f2347a6f93d884b2dd053a387bb783d
+/local_transformer_model/checkpoint-1377/optimizer.pt
+/local_transformer_model/checkpoint-918/optimizer.pt
+
+# Ignore all directories
+/backup_db/
+/backup_number/
+/local_transformer_model/
+/windows/
+
+# Ignore large file types
+*.db
+*.pt
+*.bin
+*.zip
+*.joblib 
