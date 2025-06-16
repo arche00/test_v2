@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "total_patterns": 64,
+    "groupA_count": 32,
+    "groupB_count": 32,
+    "sorting_criteria": {
+      "primary": "p_count_desc",
+      "secondary": "binary_value_desc"
+    }
+  },
+  "patterns": {
+    "groupA": [
+      {
+        "pattern_number": 1,
+        "original_number": 64,
+        "pattern_sequence": "pppppp",
+        "p_count": 6,
+        "group": "A"
+      },
+      {
+        "pattern_number": 2,
+        "original_number": 56,
+        "pattern_sequence": "pppbbb",
+        "p_count": 3,
+        "group": "A"
+      },
+      {
+        "pattern_number": 3,
+        "original_number": 52,
+        "pattern_sequence": "ppbbbb",
+        "p_count": 2,
+        "group": "A"
+      }
+    ],
+    "groupB": [
+      {
+        "pattern_number": 1,
+        "original_number": 32,
+        "pattern_sequence": "pppppp",
+        "p_count": 6,
+        "group": "B"
+      },
+      {
+        "pattern_number": 2,
+        "original_number": 28,
+        "pattern_sequence": "pppbbb",
+        "p_count": 3,
+        "group": "B"
+      },
+      {
+        "pattern_number": 3,
+        "original_number": 24,
+        "pattern_sequence": "ppbbbb",
+        "p_count": 2,
+        "group": "B"
+      }
+    ]
+  },
+  "timestamp": "2024-03-27",
+  "version": "2.0",
+  "description": "Original group classification maintained, patterns sorted by P count (descending) within each group"
+} 
