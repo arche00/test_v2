@@ -45,7 +45,6 @@ ENV/
 /windows/
 
 # Ignore large file types
-*.db
 *.zip
 *.pt
 *.bin

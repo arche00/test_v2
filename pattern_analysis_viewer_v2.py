@@ -111,7 +111,7 @@ def sort_group_id(df):
 
 def load_group_prediction_data():
     """모든 group_id별 예측 결과 w/l 빈도 집계"""
-    with sqlite3.connect('pattern_analysis_v2.db') as conn:
+    with sqlite3.connect('pattern_analysis_v4.db') as conn:
         # 전체 데이터 로드
         df = pd.read_sql_query("""
             SELECT 
@@ -265,7 +265,7 @@ def analyze_session_patterns():
     
     처리 과정:
     1. session_pattern_analysis 테이블 생성
-    2. pattern_analysis_v2.db에서 데이터 로드
+    2. pattern_analysis_v4.db에서 데이터 로드
     3. session_id별로 그룹화하여 처리
     4. 각 session의 pattern12와 pattern123 결과를 이어붙임
     5. 1~10 길이의 패턴을 추출하고 빈도수 계산
@@ -282,7 +282,7 @@ def analyze_session_patterns():
     # 1. 테이블 생성
     create_pattern_analysis_db()
     
-    with sqlite3.connect('pattern_analysis_v2.db') as conn:
+    with sqlite3.connect('pattern_analysis_v4.db') as conn:
         # 2. 데이터 로드
         # session_id와 group_start 순서대로 정렬하여 로드
         df = pd.read_sql_query("""
@@ -395,7 +395,7 @@ def validate_pattern_3char(actual_pattern, three_char_df):
         search_pattern = actual_pattern[i:i+2]
         
         # 최근 1일 데이터에서 검색 패턴으로 시작하는 3자리 패턴 찾기
-        with sqlite3.connect('pattern_analysis_v2.db') as conn:
+        with sqlite3.connect('pattern_analysis_v4.db') as conn:
             recent_df = pd.read_sql_query("""
                 SELECT session_id, prediction_results 
                 FROM session_prediction_results 
@@ -453,7 +453,7 @@ def validate_pattern_3char(actual_pattern, three_char_df):
     if len(actual_pattern) >= 2:
         last_search = actual_pattern[-2:]
         # 최근 1일 데이터에서 검색 패턴으로 시작하는 3자리 패턴 찾기
-        with sqlite3.connect('pattern_analysis_v2.db') as conn:
+        with sqlite3.connect('pattern_analysis_v4.db') as conn:
             recent_df = pd.read_sql_query("""
                 SELECT session_id, prediction_results 
                 FROM session_prediction_results 
@@ -523,7 +523,7 @@ def validate_pattern_4char(actual_pattern, four_char_df):
         search_pattern = actual_pattern[i:i+3]
         
         # 최근 1일 데이터에서 검색 패턴으로 시작하는 4자리 패턴 찾기
-        with sqlite3.connect('pattern_analysis_v2.db') as conn:
+        with sqlite3.connect('pattern_analysis_v4.db') as conn:
             recent_df = pd.read_sql_query("""
                 SELECT session_id, prediction_results 
                 FROM session_prediction_results 
@@ -581,7 +581,7 @@ def validate_pattern_4char(actual_pattern, four_char_df):
     if len(actual_pattern) >= 3:
         last_search = actual_pattern[-3:]
         # 최근 1일 데이터에서 검색 패턴으로 시작하는 4자리 패턴 찾기
-        with sqlite3.connect('pattern_analysis_v2.db') as conn:
+        with sqlite3.connect('pattern_analysis_v4.db') as conn:
             recent_df = pd.read_sql_query("""
                 SELECT session_id, prediction_results 
                 FROM session_prediction_results 
@@ -925,7 +925,7 @@ def display_validation_results_with_pick(validation_results, title):
 
 def main():
     import streamlit as st
-    st.title("패턴 분석 결과 뷰어")
+    st.title("패턴 분석 결과 뷰어_v2")
     
     # Initialize validation_id
     validation_id = None
@@ -1079,7 +1079,7 @@ def main():
                 st.success("검증 결과가 저장되었습니다!")
     
     # 분석기 초기화
-    analyzer = PatternAnalyzer('pattern_analysis_v2.db', 'pattern_analysis_results.db')
+    analyzer = PatternAnalyzer('pattern_analysis_v4.db', 'pattern_analysis_results.db')
     
     # 분석 새로고침 버튼
     if st.button("분석 새로고침"):
@@ -1107,7 +1107,7 @@ def main():
         actual_pattern = actual_pattern.upper()
         
         # 최근 24시간 3자리 패턴 데이터 로드
-        with sqlite3.connect('pattern_analysis_v2.db') as conn:
+        with sqlite3.connect('pattern_analysis_v4.db') as conn:
             recent_df = pd.read_sql_query("""
                 SELECT prediction_results 
                 FROM session_prediction_results 
@@ -1211,7 +1211,7 @@ def main():
         with col2:
             st.write("최근 1일 데이터 검색 결과")
             # 최근 1일 데이터 로드
-            with sqlite3.connect('pattern_analysis_v2.db') as conn:
+            with sqlite3.connect('pattern_analysis_v4.db') as conn:
                 recent_df = pd.read_sql_query("""
                     SELECT session_id, prediction_results 
                     FROM session_prediction_results 
@@ -1276,7 +1276,7 @@ def main():
             '최근 1-2 높은빈도': '최근 1-2 높은빈도',
             '최근 1-2-3 W': '최근 1-2-3 W',
             '최근 1-2-3 L': '최근 1-2-3 L',
-            '최근 1-2-3 높은빈도': '최근 1-2-3 높은빈도'
+            '최근 1-2-3 높은빈도': st.column_config.TextColumn('최근 1-2-3 높은빈도', width=50)
         }
         freq_df = freq_df.rename(columns=column_mapping)
         
@@ -1323,7 +1323,7 @@ def main():
         four_char_patterns = ['WWW', 'WWL', 'WLL', 'WLW', 'LLL', 'LLW', 'LWL', 'LWW']
         
         # 최근 1일 데이터에서 패턴 분석
-        with sqlite3.connect('pattern_analysis_v2.db') as conn:
+        with sqlite3.connect('pattern_analysis_v4.db') as conn:
             recent_df = pd.read_sql_query("""
                 SELECT prediction_results 
                 FROM session_prediction_results 
@@ -1405,7 +1405,7 @@ def main():
 if __name__ == "__main__":
     import sys
     if len(sys.argv) > 1 and sys.argv[1] == "analyze_sequences":
-        analyzer = PatternAnalyzer('pattern_analysis_v2.db', 'pattern_analysis_results.db')
+        analyzer = PatternAnalyzer('pattern_analysis_v4.db', 'pattern_analysis_results.db')
         analyzer.analyze_sequences()
         print("analyze_sequences finished")
     else:
